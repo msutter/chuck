@@ -2,6 +2,7 @@ GEM
   remote: http://rubygems.org/
   specs:
     addressable (2.3.2)
+    awesome_print (1.1.0)
     cuuid (0.3.1)
     daemons (1.1.8)
     em-http-request (0.3.0)
@@ -39,6 +40,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   cuuid
   em-http-request
   em-websocket
