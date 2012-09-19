@@ -16,7 +16,7 @@
     %tr
       %td Content
       %td
-        - if resource.text?
+        - if resource.text? || resource.json? || resource.xml?
           %pre!= resource.body
         - elsif resource.image?
           %img{src: url(:request, resource.id, :body)}

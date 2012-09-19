@@ -47,6 +47,14 @@ module Chuck
       !!headers.find {|f, v| %r{content-type}i.match(f) && %r{^text/}i.match(v)}
     end
 
+    def json?
+      !!headers.find {|f, v| %r{content-type}i.match(f) && %r{json}i.match(v)}
+    end
+
+    def xml?
+      !!headers.find {|f, v| %r{content-type}i.match(f) && %r{xml}i.match(v)}
+    end
+
     def image?
       !!headers.find {|f, v| %r{content-type}i.match(f) && %r{^image/}i.match(v)}
     end
